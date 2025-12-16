@@ -29,7 +29,7 @@ Visando maior conformidade, rastreabilidade e eficiência operacional.
 | **Padrão** | Programação Assíncrona e Orientada a Eventos |
 
 ---
-
+```text
 sistema-confeccao/
 ├── backend/
 │   ├── data/
@@ -41,7 +41,7 @@ sistema-confeccao/
 │   ├── corte/                 # Painel de Status de Produção (Corte)
 │   └── gerencial/             # Dashboard de Monitoramento (KPIs)
 └── package.json
-
+```
 ---
 📋 Como Instalar e Rodar
 ✅ Pré-requisitos
@@ -87,5 +87,6 @@ A3	Exceção de regra: cor fora do padrão do colégio	Justificativa obrigatóri
 ---
 📌 Observação:
 Este projeto foi desenvolvido como MVP, com foco em rastreabilidade, alertas em tempo real e visualização de gargalos produtivos.
+
 
 
