@@ -31,7 +31,7 @@ Visando maior conformidade, rastreabilidade e eficiência operacional.
 ---
 
 ## 📁 Estrutura do Projeto
-
+```text
 sistema-confeccao/
 ├── backend/
 │   ├── data/
@@ -88,3 +88,4 @@ A3	Exceção de regra: cor fora do padrão do colégio	Justificativa obrigatóri
 ---
 📌 Observação:
 Este projeto foi desenvolvido como MVP, com foco em rastreabilidade, alertas em tempo real e visualização de gargalos produtivos.
+
