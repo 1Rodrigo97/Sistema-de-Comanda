@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Confecção em Tempo Real | Menu Principal</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <style>
+        .menu-container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .menu-container a {
+            display: block;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .menu-container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1>Sistema de Gestão de Comandas (MVP)</h1>
+        <p>Acesse a interface desejada:</p>
+        
+        <a href="vendedor/index.html">🧑‍💼 Interface do Vendedor (Criação de Comandas e Regras A3)</a>
+        <a href="corte/index.html">✂️ Painel de Corte (Fila de Produção e Alerta A1)</a>
+        <a href="gerencial/index.html">📊 Dashboard Gerencial (Monitoramento A2/A3)</a>
+
+        <p id="status-conexao" class="status-alerta" style="font-weight: normal; margin-top: 30px;">
+            Inicie o servidor (node server.js) para que os links funcionem.
+        </p>
+    </div>
+
+</body>
+</html>

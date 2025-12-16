@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas | Comanda Confecção</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>Vendas | Nova Comanda</h1>
+        <p>Preencha os dados e clique em "Enviar Comanda para Corte".</p>
+    </header>
+
+    <main class="container">
+        
+        <section id="dados-gerais">
+            <h2>1. Informações Básicas</h2>
+            
+            <label for="vendedor">Vendedor(a):</label>
+            <select id="vendedor" required>
+                <option value="" disabled selected>Selecione o Vendedor</option>
+                <option value="Joao Vendedor (ID: 1)">João Vendedor (ID: 1)</option>
+                <option value="Maria Atendente (ID: 2)">Maria Atendente (ID: 2)</option>
+                <option value="Carlos Gerente (ID: 3)">Carlos Gerente (ID: 3)</option>
+            </select>
+            <label for="colegio">Colégio:</label>
+            <select id="colegio" required>
+                <option value="">Selecione o Colégio</option>
+                <option value="A">Colégio Alfa</option>
+                <option value="B">Escola Beta</option>
+                <option value="C">Academia Gama</option>
+            </select>
+            
+            <label for="prazo">Prazo de Entrega:</label>
+            <input type="date" id="prazo" required>
+        </section>
+
+        <h2>2. Itens do Pedido</h2>
+        <p>A cor do **Primeiro Item** será usada para a verificação da Regra de Inconsistência (Alerta A3).</p>
+        
+        <section id="itens-pedido">
+    <div class="item-pedido" data-item-id="1">
+        <h3>Item 1</h3>
+        <label for="item-1">Item Vendido (ex: Camisa Gola V):</label>
+        <input type="text" id="item-1" value="Camisa Gola V" required>
+
+        <label for="cor-1">Cor Proposta (para este item):</label>
+        <input type="text" id="cor-1" value="Azul Marinho" placeholder="Ex: Azul Marinho, Amarelo" required>
+        
+        <h4>3. Quantidades por Tamanho</h4>
+        <table class="tabela-tamanhos" data-tamanho-id="1">
+            <thead>
+                <tr>
+                    <th>Tamanho</th>
+                    <th>P</th>
+                    <th>M</th>
+                    <th>G</th>
+                    <th>GG</th>
+                    <th>EGG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Quantidade:</td>
+                    <td><input type="number" data-tamanho="P" value="0" min="0"></td>
+                    <td><input type="number" data-tamanho="M" value="0" min="0"></td>
+                    <td><input type="number" data-tamanho="G" value="0" min="0"></td>
+                    <td><input type="number" data-tamanho="GG" value="0" min="0"></td>
+                    <td><input type="number" data-tamanho="EGG" value="0" min="0"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+    </div>
+</section>
+        
+        <button type="button" id="btn-adicionar-item">➕ Adicionar Outro Item</button>
+        <button id="btn-enviar-comanda">Enviar Comanda para Corte</button>
+        
+        <div id="status-conexao" class="status-ok">Conexão: OK</div>
+    </main>
+
+    <div id="modal-alerta" class="modal-bg" style="display: none;">
+        <div class="modal-content">
+            <h3>⚠️ Alerta de Inconsistência de Regras!</h3>
+            <p id="alerta-mensagem"></p>
+            <p>Se esta for uma exceção, insira uma justificativa e reenvie.</p>
+            
+            <label for="justificativa">Justificativa:</label>
+            <textarea id="justificativa" rows="3" required></textarea>
+            
+            <button id="btn-reenviar-justificar">Reenviar com Justificativa</button>
+            <button id="btn-cancelar-alerta">Corrigir e Cancelar</button>
+        </div>
+    </div>
+
+    <script src="vendedor.js"></script>
+
+</body>
+</html>

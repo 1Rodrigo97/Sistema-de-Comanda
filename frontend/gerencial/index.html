@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Gerencial | Alertas de Produção</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <style>
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .kpi-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .kpi-card h2 { margin-top: 0; font-size: 1.5em; }
+        .kpi-card .valor { font-size: 3em; font-weight: bold; color: #007bff; }
+        .alerta-A2 { border-left: 5px solid red; }
+        .alerta-A3 { border-left: 5px solid orange; }
+        #lista-alertas {
+            grid-column: 1 / -1; /* Ocupa a largura total */
+        }
+        .comanda-alerta {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            background: #fcfcfc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📊 Dashboard Gerencial - Alertas Críticos</h1>
+        <p>Monitoramento em Tempo Real de Atrasos (A2) e Exceções de Regra (A3).</p>
+        <div id="status-conexao" class="status-ok">Conexão: OK</div>
+    </header>
+
+    <main class="dashboard-grid">
+        <div id="kpi-a2" class="kpi-card">
+            <h2>Comandas em Alerta A2 (Atraso Corte)</h2>
+            <div class="valor" id="total-a2">0</div>
+        </div>
+
+        <div id="kpi-a3" class="kpi-card">
+            <h2>Comandas em Alerta A3 (Exceção Regra)</h2>
+            <div class="valor" id="total-a3">0</div>
+        </div>
+
+        <section id="lista-alertas">
+            <h2>Detalhes das Comandas com Alertas (A2 e A3)</h2>
+            <div id="alertas-container">
+                <p>Nenhum alerta ativo no momento.</p>
+            </div>
+            <div id="kpi-performance" class="kpi-card" style="background-color: #e6f7ff;">
+            <h2>📈 Conformidade do Corte (&lt; 30 min)</h2>
+            <div class="valor" id="taxa-conformidade">N/A</div>
+        </div>
+
+        <section id="lista-alertas">
+            </section>
+    </main>
+        </section>
+    </main>
+
+    <script src="gerencial.js"></script>
+
+</body>
+</html>

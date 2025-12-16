@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corte | Painel de Comandas em Tempo Real</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <style>
+        /* Estilos específicos para o painel de corte */
+        #lista-comandas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .comanda-card {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .comanda-card h3 {
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .comanda-card p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        .status-fila {
+            font-weight: bold;
+            color: #333;
+        }
+        /* Alerta A1 Visual */
+        .alerta-ativo {
+            border-color: #dc3545 !important; /* Vermelho */
+            background-color: #f8d7da;
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>✂️ Painel de Corte - Comandas na Fila</h1>
+        <p>Acompanhe as comandas em tempo real. Alerta A1: Comanda parada há mais de 15 minutos.</p>
+        <div id="status-conexao" class="status-ok">Conexão: OK</div>
+    </header>
+
+    <main id="lista-comandas">
+        </main>
+
+    <script src="corte.js"></script>
+
+</body>
+</html>

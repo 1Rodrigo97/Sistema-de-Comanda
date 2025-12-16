@@ -1,0 +1,21 @@
+{
+  "name": "sistema-confeccao",
+  "version": "1.0.0",
+  "description": "Sistema de Comandas e Produção para Confecção",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "websocket"
+  ],
+  "author": "",
+  "license": "ISC"
+}
