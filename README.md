@@ -30,19 +30,18 @@ Visando maior conformidade, rastreabilidade e eficiência operacional.
 
 ---
 
-## 📁 Estrutura do Projeto
-```text
 sistema-confeccao/
 ├── backend/
 │   ├── data/
-│   │   ├── ComandaModel.js        # Modelo central e lógica de tempo (A1, A2, Performance)
-│   │   └── RegrasDeNegocio.js     # Regras de validação (Alerta A3 - Cor vs. Colégio)
-│   └── server.js                 # Servidor Principal (Express + WebSocket)
+│   │   ├── ComandaModel.js     # Modelo central e lógica de tempo (A1, A2, Performance)
+│   │   └── RegrasDeNegocio.js  # Regras de validação (Alerta A3 - Cor vs. Colégio)
+│   └── server.js              # Servidor Principal (Express + WebSocket)
 ├── frontend/
-│   ├── vendedor/                 # Interface de Entrada de Pedidos (Vendas)
-│   ├── corte/                    # Painel de Status de Produção (Corte)
-│   └── gerencial/                # Dashboard de Monitoramento (KPIs)
+│   ├── vendedor/              # Interface de Entrada de Pedidos (Vendas)
+│   ├── corte/                 # Painel de Status de Produção (Corte)
+│   └── gerencial/             # Dashboard de Monitoramento (KPIs)
 └── package.json
+
 ---
 📋 Como Instalar e Rodar
 ✅ Pré-requisitos
@@ -88,4 +87,5 @@ A3	Exceção de regra: cor fora do padrão do colégio	Justificativa obrigatóri
 ---
 📌 Observação:
 Este projeto foi desenvolvido como MVP, com foco em rastreabilidade, alertas em tempo real e visualização de gargalos produtivos.
+
 
