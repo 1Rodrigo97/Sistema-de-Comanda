@@ -87,10 +87,13 @@ Gerencial (Monitoramento)	http://localhost:3000/gerencial/index.html
 ---
 🚨 Regras de Negócio e Alertas
 Alerta	Descrição	Regra	Monitoramento
+```bash
 A1	Comanda parada aguardando corte	> 15 min em “Aguardando Corte”	Painel do Corte
 A2	Atraso no processamento	> 30 min em “Em Corte”	Dashboard Gerencial
 A3	Cor fora do padrão do colégio	Justificativa obrigatória	Dashboard Gerencial
+```
 ---
+
 
 
 
