@@ -62,6 +62,35 @@ cd Sistema-de-Comanda
 # Instale as dependências
 npm install
 ```
+---
+2️⃣ Iniciando o Servidor
+
+Inicie o servidor Node.js a partir da pasta raiz:
+```bash
+npm start
+```
+Saída esperada no console:
+```bash
+Servidor rodando em http://localhost:3000
+```
+---
+3️⃣ Acessando as Interfaces
+
+Com o servidor rodando, abra no navegador:
+
+Setor	URL
+Vendedor (Entrada)	http://localhost:3000/vendedor/index.html
+
+Corte (Status)	http://localhost:3000/corte/index.html
+
+Gerencial (Monitoramento)	http://localhost:3000/gerencial/index.html
+---
+🚨 Regras de Negócio e Alertas
+Alerta	Descrição	Regra	Monitoramento
+A1	Comanda parada aguardando corte	> 15 min em “Aguardando Corte”	Painel do Corte
+A2	Atraso no processamento	> 30 min em “Em Corte”	Dashboard Gerencial
+A3	Cor fora do padrão do colégio	Justificativa obrigatória	Dashboard Gerencial
+---
 
 
 
