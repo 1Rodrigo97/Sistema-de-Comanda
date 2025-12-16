@@ -2,7 +2,7 @@
 
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![WebSockets](https://img.shields.io/badge/WebSockets-10A183?style=for-the-badge&logo=websockets&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-[![JavaScript](https://img.shields.com/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 Este projeto implementa um **Sistema MVP de Gestão e Monitoramento de Comandas de Confecção em Tempo Real**.  
 Utilizando comunicação assíncrona via **WebSockets**, conecta e monitora instantaneamente os setores de **Vendas**, **Corte** e o **Dashboard Gerencial**.
@@ -94,6 +94,7 @@ A2	Atraso no processamento	> 30 min em “Em Corte”	Dashboard Gerencial
 A3	Cor fora do padrão do colégio	Justificativa obrigatória	Dashboard Gerencial
 ```
 ---
+
 
 
 
