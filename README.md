@@ -43,50 +43,26 @@ sistema-confeccao/
 └── package.json
 ```
 ---
-📋 Como Instalar e Rodar
-✅ Pré-requisitos
-Node.js v18+
-NPM (gerenciador de pacotes)
----
-1️⃣ Clonagem e Instalação
-# Clone o repositório
-git clone https://github.com/1Rodrigo97/Sistema-de-Comanda.git
+## 📋 Como Instalar e Rodar
+
+### ✅ Pré-requisitos
+
+* Node.js v18+
+* NPM (gerenciador de pacotes)
+
+### 1️⃣ Clonagem e Instalação
+
+```bash
+# Clonar o repositório
+git clone [https://github.com/1Rodrigo97/Sistema-de-Comanda.git](https://github.com/1Rodrigo97/Sistema-de-Comanda.git)
 
 # Acesse o diretório
 cd Sistema-de-Comanda
 
 # Instale as dependências
 npm install
----
-2️⃣ Iniciando o Servidor
+```
 
-Inicie o servidor Node.js a partir da pasta raiz:
-npm start
-Saída esperada no console:
-Servidor rodando em http://localhost:3000
----
-3️⃣ Acessando as Interfaces
-
-Com o servidor rodando, acesse as interfaces abaixo no navegador para simular o fluxo completo de produção:
-
-Setor	URL de Acesso
-Vendedor (Entrada)	http://localhost:3000/vendedor/index.html
-
-Corte (Status)	http://localhost:3000/corte/index.html
-
-Gerencial (Monitoramento)	http://localhost:3000/gerencial/index.html
----
-🚨 Regras de Negócio e Alertas
-
-O sistema monitora continuamente o fluxo das comandas e gera alertas instantâneos:
-
-Alerta	Descrição	Limite / Regra	Monitorado em
-A1	Parada na fila: comanda aguardando início do corte	> 15 minutos em Aguardando Corte	Painel do Corte
-A2	Atraso no processamento: tempo de corte excedido	> 30 minutos em Em Corte	Dashboard Gerencial
-A3	Exceção de regra: cor fora do padrão do colégio	Justificativa obrigatória do vendedor	Dashboard Gerencial
----
-📌 Observação:
-Este projeto foi desenvolvido como MVP, com foco em rastreabilidade, alertas em tempo real e visualização de gargalos produtivos.
 
 
 
